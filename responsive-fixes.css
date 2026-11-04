@@ -1,0 +1,10 @@
+@media (max-width: 980px) {
+  .type-orbit { display: none; }
+  .disc { width: 76px; height: 76px; flex: 0 0 76px; }
+  .disc span { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

@@ -1,0 +1,67 @@
+/* V8: intentional touch-first project and motion presentation */
+@media (hover:none), (pointer:coarse){
+  .cursor{display:none!important}
+  .project,.practice-card{translate:none!important}
+  .project-stage{filter:none!important}
+  .project-hover{
+    opacity:1!important;
+    translate:0 0!important;
+    right:10px!important;
+    left:10px!important;
+    bottom:10px!important;
+    min-height:46px;
+    justify-content:space-between;
+    padding:0 15px!important;
+    border-radius:11px;
+    background:rgba(248,247,243,.94)!important;
+    color:#111217!important;
+    border:1px solid rgba(17,18,23,.16)!important;
+    box-shadow:0 10px 30px rgba(17,18,23,.12);
+    backdrop-filter:blur(18px) saturate(1.2);
+  }
+  .project-hover b{width:27px;height:27px;border-radius:50%;display:grid;place-items:center;background:#111217;color:#fff;font-size:13px}
+}
+
+@media(max-width:580px){
+  .project{background:rgba(255,255,255,.5);border-color:rgba(17,18,23,.24)}
+  .project-top{border-bottom-color:rgba(17,18,23,.16)}
+  .project-title{display:block;padding:25px 15px 24px}
+  .project-title h3{font-size:54px;line-height:.82;margin-bottom:20px}
+  .project-title p{max-width:31rem;color:#565a62}
+  .project-stage{height:min(128vw,500px);min-height:430px;isolation:isolate}
+
+  .marketplace-stage .market-ui{left:5%;width:90%;top:7%;height:46%;padding:15px}
+  .market-ui h4{font-size:31px;margin:30px 0 20px}
+  .mini-nav span{display:none}.mini-nav{gap:8px}.mini-nav b{font-size:11px}.mini-nav i{padding:5px 9px}
+  .search-row span{padding:11px 7px;font-size:7px}.search-row b{width:36px}
+  .phone-lucky{width:178px;height:270px;right:-1%;bottom:9%;transform:rotate(4deg)!important}
+  .phone-lucky strong{font-size:19px}.phone-card{height:96px}
+
+  .g-lockup{left:6%;top:11%}.g-lockup h4{font-size:42px}.g-lockup span{display:none}
+  .reward-card{left:6%;top:53%;transform:rotate(-3deg) scale(.9);transform-origin:left top}
+  .g-mobile{right:-8%;bottom:7%;transform:scale(.72);transform-origin:right bottom}
+  .tiers{display:none}
+
+  .privacy-copy{left:7%;right:7%;top:14%}.privacy-copy h4{font-size:40px;line-height:.9}.privacy-copy p{max-width:250px}
+  .radar{width:136px;height:136px;top:52%;right:5%}
+  .status-stack{left:5%;bottom:12%;width:67%}.status-stack div{padding:11px 10px}.status-stack span,.status-stack b{font-size:6px}
+
+  .motion{display:block}
+  .motion-copy{margin-bottom:30px}
+  .motion-canvas{height:310px;border-radius:18px;box-shadow:0 24px 55px rgba(17,19,17,.16)}
+  .motion-canvas>div{inset:18px;justify-content:space-between}
+  .motion-canvas span{font-size:7px;letter-spacing:.12em}
+  .motion-canvas b{font-size:clamp(34px,11vw,43px);line-height:.84;max-width:88%}
+  .motion-canvas small{font-size:6px;max-width:65%;line-height:1.5;text-align:right;margin-left:auto}
+  .motion-canvas:after{inset:11px;border-radius:12px}
+
+  .practice-card{box-shadow:0 18px 44px rgba(17,18,23,.1)}
+  .practice-copy>b{padding:10px 13px;border:1px solid rgba(255,255,255,.32);border-radius:999px;text-decoration:none}
+}
+
+@media(max-width:370px){
+  .project-title h3{font-size:48px}
+  .project-stage{min-height:410px}
+  .motion-canvas{height:290px}
+  .motion-canvas b{font-size:34px}
+}
